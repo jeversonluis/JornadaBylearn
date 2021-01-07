@@ -1,0 +1,13 @@
+# Calcula o indice de massa corporal IMC
+
+def numeroQuadrado(numero):
+  quadrado = numero ** 2
+  return quadrado
+
+def imcCalc(peso, altura):
+  alturaQuadrada = numeroQuadrado(altura)
+  imc = peso / alturaQuadrada
+  return imc
+
+meu_imc = imcCalc(95, 1.90)
+print(f'{imc:.2f}')
